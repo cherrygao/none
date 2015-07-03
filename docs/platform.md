@@ -5,7 +5,7 @@
 
 
 ```
-POST /push?mode=<mode>&id[]=<userId>&id[]=<userId2>...
+POST /push?mode=<mode>&uid[]=<userId>&uid[]=<userId2>...
 Authorization: appName
 
 <messageBody>
@@ -30,15 +30,15 @@ Authorization: appName
 ## hook (to dev)
 
 ```
-POST <appHost>/push?id=<userId>
+POST <appHost>/push?uid=<userId>
 
 <messageBody>
 ```
 
 ```
-POST <appHost>/nofication
+POST <appHost>/notify
 
-id=<userId>&action=subscribe
+uid=<userId>&action=subscribe
 ```
 
 
@@ -47,5 +47,5 @@ id=<userId>&action=subscribe
 ```
 POST /user/subscribe
 
-id=<userId>&appName=<appName>
+uid=<userId>&appName=<appName>
 ```
