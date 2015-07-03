@@ -36,7 +36,7 @@ POST <appHost>/push?id=<userId>
 ```
 
 ```
-POST <appHost>/nofication
+POST <appHost>/notify
 
 id=<userId>&action=subscribe
 ```
