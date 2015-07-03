@@ -2,7 +2,7 @@ package mail
 
 type Mail struct {
 	From    string
-	To      string
+	To      []string
 	Title   []byte
 	Message []byte
 }
